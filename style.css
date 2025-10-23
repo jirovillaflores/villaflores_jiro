@@ -69,7 +69,7 @@
             #logo {
                 font-size: 2rem;  
                 position: relative;
-                top: 21px;
+                top: 20px;
                 margin-left: -5px;
                 text-align: center;
                 border-radius: 40px;
@@ -388,3 +388,4 @@
             }
         }
     }
+

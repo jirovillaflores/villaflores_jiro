@@ -1,0 +1,542 @@
+        @media screen and (max-width: 1200px) {
+            .navbar {
+
+                ul{
+                    border-radius: 30px;
+                    background-color: rgb(43, 226, 165);
+                    padding: 15px;
+                }
+
+                ul li a{
+                    color: darkgreen;
+                    font-size: 25px;
+                    padding-inline: 30px;
+                    position: relative;
+                    
+
+                }
+
+                #logo {
+                    padding-top: 30px;
+                    font-size: 2rem;
+                    margin-left: -5px;
+                    position: absolute;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/6;
+
+                img{
+                    width: 70%;
+                }
+            }
+
+            .text-section {
+                grid-column: 6/11;
+                padding-left: 10%;
+                padding-right: 10%;
+
+
+                li:nth-child(1) {
+                    font-family: "Palanquin", sans-serif;
+                    font-size: 2rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 2rem;
+                }
+            }
+            .footer {
+                grid-column: 1 / 11;
+                
+                
+                ul li {
+                    background-color: darkblue;
+                    font-family: 'Franklin Gothic Medium', sans-serif;
+                    color: white;
+                    padding: 20px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .navbar {
+                padding-top: 20px;
+                ul{
+                    border-radius: 40px;
+                    background-color: rgb(14, 140, 119);
+                    padding: 15px;
+                }
+
+                ul li a{
+                    color: white;
+                    font-size: 25px;
+                    padding-inline: 1px;
+                    position: relative;
+                    
+
+                }
+
+                #logo {
+                    padding-top: 30px;
+                    font-size: 2rem;
+                    margin-left: -5px;
+
+                position: relative;
+                top: 20px;
+                margin-left: -5px;
+                text-align: center;
+                border-radius: 40px;
+                transition: 0.5s ease-in-out;
+                color: white;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/6;
+                
+
+                img{
+                    padding-inline: 20px;
+                    width: 85%;
+                    border-radius: 1px;
+                }
+            }
+
+            .text-section {
+                grid-column: 6/11;
+                padding-left: 10%;
+                padding-right: 10%;
+
+                li:nth-child(1) {
+                    font-family: "Palanquin", sans-serif;
+                    font-size: 1.85rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.85rem;
+                }
+
+                li:nth-child(3) {
+                font-family: "Courier New", sans-serif;
+                font-size: 1.5rem;
+                color: #960D38;
+                font-weight: bold;
+                padding-bottom: 3%;
+            }
+
+            li:nth-child(4) {
+                font-family: "Averia Serif Libre", serif;
+                font-size: 1.25rem;
+                font-style: italic;
+                color: #6C0080;
+                font-weight: bold;
+                padding-bottom: 7%;
+            }
+
+
+
+
+            }
+            .footer {
+                grid-column: 1 / 11;
+
+                ul li {
+                    background-color: darkblue;
+                    font-family: 'Franklin Gothic Medium', sans-serif;
+                    color: white;
+                    padding: 20px;
+                }
+            }    
+        }
+
+        @media screen and (max-width: 800px) {
+            .navbar {
+                padding: 40px;
+                ul {
+                    display: none;
+                }
+
+                ul li a {
+                    background-color: rgb(21, 159, 172);
+                    padding: 15px;
+                }
+                #menu {
+                    display: block;
+                    float: right;
+                }
+
+                #logo {
+                    /* margin-top: 7%;
+                    padding-top: 3%;
+                    font: "Franklin Gothic", sans-serif;
+                    font-size: 1.75rem;
+                    margin-left: -10px;
+                    text-align: center; */
+
+                    padding-top: 30px;
+                    font-size: 2rem;
+                    margin-left: -5px;
+                    position: absolute;
+                }
+            }
+
+            .image-section {
+                grid-column: 2/10;
+            
+                 img{
+                    padding-inline: 20px;
+                    width: 70%;
+                    border-radius: 1px;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+                text-align: center;
+                
+
+                li:nth-child(1) {
+                    font-size: 2.25rem;
+                    padding-top: 10px;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.55rem;
+                }
+
+                li:nth-child(3) {
+                    font-size: 1.5rem;
+                }
+
+                li:nth-child(4) {
+                    font-size: 1.25rem;
+                    padding-bottom: 30px;
+                }
+            }
+            .footer {
+                grid-column: 1 / 11;
+                    
+                ul li {
+                    margin: none;
+                    background-color: darkblue;
+                    font-family: 'Franklin Gothic Medium', sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    padding: 25px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .navbar {
+                padding: 40px;
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                }
+
+                #logo:hover {
+
+                background-color: rgb(51, 11, 138);
+                color: greenyellow; 
+                font-size: 25px;
+                transform: scale(1.0);
+                padding: 20px;
+                margin-top: 2%;
+                
+            }
+                }
+
+                #logo {
+                    /* margin-top: 4%;
+                    padding-top: 4%;
+                    font: "Franklin Gothic", sans-serif;
+                    font-size: 30px;
+                    margin-left: -10px;
+                    text-align: center; */
+
+                    padding-top: 30px;
+                    font-size: 2rem;
+                    margin-left: -5px;
+                    position: absolute;
+                }
+            }
+
+            .image-section {
+                grid-column: 2/10;
+                
+                 img{
+                    padding-inline: 20px;
+                    width: 70%;
+                    border-radius: 1px;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+                text-align: center;
+                
+
+                li:nth-child(1) {
+                    font-size: 2.25rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.55rem;
+                }
+
+                li:nth-child(3) {
+                    font-size: 1.5rem;
+                }
+
+                li:nth-child(4) {
+                    font-size: 1.25rem;
+                    padding-bottom: 30px;
+                }
+            }
+            .footer {
+                grid-column: 1 / 11;
+                    
+                ul li {
+                    margin: none;
+                    background-color: darkblue;
+                    font-family: 'Franklin Gothic Medium', sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    padding: 25px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar {
+                padding: 40px;
+                background-color: rgb(124, 8, 97);
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                }
+
+                #logo {
+                    /* margin-top: 6%;
+                    padding-top: 1%;
+                    font: "Franklin Gothic", sans-serif;
+                    font-size: 30px;
+                    margin-left: -10px;
+                    text-align: center; */
+
+                    padding-top: 30px;
+                    font-size: 2rem;
+                    margin-left: -5px;
+                    position: absolute;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/11;
+              
+                img{
+                    width: 65%;
+                    border-radius: 1px;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+                text-align: center;
+                
+
+                li:nth-child(1) {
+                    font-size: 2rem;
+                    padding-top: 3px;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.55rem;
+                }
+
+                li:nth-child(3) {
+                    font-size: 1.5rem;
+                }
+
+                li:nth-child(4) {
+                    font-size: 1.25rem;
+                    padding-bottom: 50px;
+                }
+            }
+            .footer {
+                grid-column: 1 / 11;
+                    
+                ul li {
+                    margin: none;
+                    background-color: darkblue;
+                    font-family: 'Franklin Gothic Medium', sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    padding: 25px;
+                }
+            }   
+        }
+
+
+        @media screen and (max-width: 550px) {
+            .navbar {
+                padding: 40px;
+                background-color: rgb(61, 22, 52);
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                }
+
+                #logo {
+                    /* margin-top: 6%;
+                    padding-top: 1%;
+                    font: "Franklin Gothic", sans-serif;
+                    font-size: 30px;
+                    margin-left: -10px;
+                    text-align: center; */
+
+                    padding-top: 30px;
+                    font-size: 2rem;
+                    margin-left: -5px;
+                    position: absolute;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/11;
+              
+                img{
+                    width: 75%;
+                    border-radius: 1px;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+                text-align: center;
+                
+
+                li:nth-child(1) {
+                    font-size: 2rem;
+                    padding-top: 3px;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.55rem;
+                }
+
+                li:nth-child(3) {
+                    font-size: 1.5rem;
+                }
+
+                li:nth-child(4) {
+                    font-size: 1.25rem;
+                    padding-bottom: 50px;
+                }
+            }
+            .footer {
+                grid-column: 1 / 11;
+                    
+                ul li {
+                    margin: none;
+                    background-color: darkblue;
+                    font-family: 'Franklin Gothic Medium', sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    padding: 25px;
+                }
+            }   
+        }
+
+
+        @media screen and (max-width: 400px) {
+
+            .navbar {
+                background-color: rgb(15, 165, 140);
+                padding: 40px;
+                
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                    position: relative;
+                }
+
+                #logo {
+                    /* margin-top: 7%;
+                    padding-top: 3%;
+                    font: "Franklin Gothic", sans-serif;
+                    font-size: 30PX;
+                    margin-left: -10px;
+                    text-align: center; */
+
+                    padding-top: 24px;
+                    font-size: 2rem;
+                    margin-left: -5px;
+                    position: absolute;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/10;
+
+                img{
+                    width: 95%;
+                    border-radius: 1px;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+                text-align: center;
+                
+
+                li:nth-child(1) {
+                    font-size: 2.25rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.55rem;
+                }
+
+                li:nth-child(3) {
+                    font-size: 1.5rem;
+                }
+
+                li:nth-child(4) {
+                    font-size: 1.25rem;
+                    padding-bottom: 50px;
+                }
+            }
+            .footer {
+                grid-column: 1 / 11;
+                    
+                ul li {
+                    margin: none;
+                    background-color: darkblue;
+                    font-family: 'Franklin Gothic Medium', sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    padding: 25px;
+                }
+            }
+        }    
+        

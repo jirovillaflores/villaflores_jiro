@@ -1,482 +1,156 @@
 * {
-  margin: 0;
-  padding: 0;
+      margin: 0;
+      padding: 0;
 }
 
 body {
-  background-color: #23C1D3;
+     background-color: #23C1D3;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* gap: 10px; */
 }
 
 .grid-container > div {
-  font-size: 30px;
-  /* outline: 3px solid rgb(10, 28, 226); */
+    font-size: 30px;
+    /* outline: 3px solid rgb(10, 28, 226); */
 }
 
 .menu-bar {
-  display: none !important;
+     display: none !important;
 }
 
 .navbar {
-  grid-column: 1 / 11;
-  padding: 23px;
-  background-color: #5E8C08;
-  color: aliceblue;
+    grid-column: 1 / 11;
+    padding: 23px;
+    background-color: #5E8C08;
+    color: aliceblue;
+
+
+ul {
+    grid-column: 6 / 11;
+    background-color: rgb(43, 226, 165);
+    border-radius: 40px;
+    padding: 15px;
+    float: right;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar ul {
-  grid-column: 6 / 11;
-  background-color: rgb(43, 226, 165);
-  border-radius: 40px;
-  padding: 15px;
-  float: right;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.navbar li {
-  padding-inline: 15px;
+li {
+    padding-inline: 15px;   
   
 }
 
-.navbar a {
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  text-decoration: none;
-  color: darkgreen;
-  padding-inline: 20px;
-  position: relative;
+a {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: darkgreen;
+    padding-inline: 20px;
+    position: relative;
+  }
+
+  
 }
 
-/* LOGO */
 #logo {
-  font-size: 2rem;
-  position: relative;
-  top: 20px;
-  margin-left: -5px;
-  text-align: center;
-  border-radius: 40px;
-  transition: 0.5s ease-in-out;
-  color: white;
+    font-size: 2rem;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    border-radius: 40px;
+    transition: 0.5s ease-in-out;
+    color: white;
 }
 
 #logo:hover {
-  background-color: rgb(51, 11, 138);
+    background-color: rgb(51, 11, 138);
     color: greenyellow;
-  font-size: 25px;
-  transform: scale(1.0);
-  padding: 20px;
-  margin-top: 2%;
+    font-size: 25px;
+    transform: scale(1.0);
+    padding: 20px;
+    margin-top: 2%;
 }
 
 #menu {
-  display: none;
+    display: none;
 }
 
 
 .image-section {
-  grid-column: 1 / 6;
-  text-align: center;
-  padding: 2rem 0 0 0;
-}
+    grid-column: 1 / 6;
+    text-align: center;
+    padding: 2rem 0 0 0;
 
-.image-section img {
-  border-radius: 20%;
-  width: 47%;
+img {
+    border-radius: 20%;
+    width: 65%;
+  }
 }
 
 .text-section {
-  grid-column: 6 / 11;
-  padding-top: 3%;
-  padding-left: 10%;
-  padding-right: 10%;
-  display: grid;
-  place-content: space-evenly;
-}
-
-.text-section ul {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-}
-
-.text-section li:nth-child(1) {
-  font-family: "Palanquin", sans-serif;
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #6C0080;
-  padding-bottom: 2%;
-}
-
-.text-section li:nth-child(2) {
-  font-family: "Palanquin", sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding-bottom: 2%;
-}
-
-.text-section li:nth-child(3) {
-  font-family: "Courier New", sans-serif;
-  font-size: 2rem;
-  color: #960D38;
-  font-weight: bold;
-  padding-bottom: 3%;
-}
-
-.text-section li:nth-child(4) {
-  font-family: "Averia Serif Libre", serif;
-  font-size: 1.25rem;
-  font-style: italic;
-  color: #6C0080;
-  font-weight: bold;
-  padding-bottom: 7%;
-}
-
-
-.footer {
-  text-align: center;
-  grid-column: 1 / 11;
-  place-content: center;
-  color: white;
-}
-
-.footer ul li {
-  background-color: darkblue;
-  font-family: "Franklin Gothic";
-  font-size: 20px;
-  list-style: none;
-  padding: 35px;
-}
-
-/* media responsive queries */
-@media screen and (max-width: 1200px) {
-  .navbar {
-    background-color: blue;
-    padding: 30px;
-  }
-
-  .navbar ul li a {
-    padding-inline: 34px;
-    font-size: 2rem;
-  }
-
-  #logo {
-    padding-top: 30px;
-    font-size: 2rem;
-    margin-left: -5px;
-    position: absolute;
-  }
-
-  #logo:hover {
-    background-color: rgb(51, 11, 138);
-    color: greenyellow;
-    font-size: 25px;
-    transform: scale(1.0);
-    padding: 15px;
-  }
-
-  .image-section {
-    grid-column: 1 / 6;
-  }
-
-  .image-section img {
-    border-radius: 10px;
-    width: 70%;
-  }
-
-  .text-section {
     grid-column: 6 / 11;
-  }
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
 
-  .text-section li:nth-child(1) {
-    font-size: 3rem;
-  }
-
-  .text-section li:nth-child(2) {
-    font-size: 2rem;
-  }
-
-  .footer {
-  text-align: center;
-  grid-column: 1 / 11;
-  place-content: center;
-  color: white;
-}
-
-.footer ul li {
-  background-color: darkblue;
-  font-family: "Franklin Gothic";
-  font-size: 20px;
-  list-style: none;
-  padding: 35px;
-}
-
-}
-
-@media screen and (max-width: 1000px) {
-  .navbar {
-    background-color: blue;
-    padding: 30px;
-  }
-
-  .navbar ul li a {
-    padding-inline: 12px;
-    font-size: 2rem;
-  }
-
-  #logo {
-    padding-top: 30px;
-    font-size: 2rem;
-    margin-left: -5px;
-    position: absolute;
-  }
-
-  #logo:hover {
-    background-color: rgb(51, 11, 138);
-    color: greenyellow;
-    font-size: 25px;
-    transform: scale(1.0);
-    padding: 15px;
-  }
-
-  .image-section {
-    grid-column: 1 / 6;
-  }
-
-  .image-section img {
-    border-radius: 10px;
-    width: 70%;
-  }
-
-  .text-section {
-    grid-column: 6 / 11;
-  }
-
-  .text-section li:nth-child(1) {
-    font-size: 3rem;
-  }
-
-  .text-section li:nth-child(2) {
-    font-size: 2rem;
-  }
-
-.footer {
-  text-align: center;
-  grid-column: 1 / 11;
-  place-content: center;
-  color: white;
-}
-
-.footer ul li {
-  background-color: darkblue;
-  font-family: "Franklin Gothic";
-  font-size: 20px;
-  list-style: none;
-  padding: 35px;
-}
-
-}
-
-@media screen and (min-width: 400px) and (max-width: 800px) {
-  .navbar ul {
+ul {
     display: flex;
-  }
+    list-style: none;
+    flex-direction: column;
 }
-
-@media screen and (max-width: 800px) {
-  .navbar {
-    background-color: #6C0080;
-    padding: 60px;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-
-  #logo {
-    font-size: 30px;
-    margin-left: -39px;
-  }
-
-  #logo:hover {
-    background-color: rgb(51, 11, 138);
-    color: greenyellow;
-  }
-
-  #menu {
-    float: right;
-  }
-
-  .image-section {
-    grid-column: 1 / 11;
-    padding-top: 10px;
-  }
-
-  .image-section img {
-    border-radius: 20%;
-    width: 50%;
-  }
-
-  .text-section {
-    grid-column: 1 / 11;
-    padding-top: 1rem;
-  }
-
-  .text-section li:nth-child(1) {
+li:nth-child(1) {
+    font-family: "Palanquin", sans-serif;
     font-size: 3rem;
-  }
+    font-weight: bold;
+    color: #6C0080;
+    padding-bottom: 2%;
+}
 
-  .text-section li:nth-child(2) {
+li:nth-child(2) {
+    font-family: "Palanquin", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+li:nth-child(3) {
+    font-family: "Courier New", sans-serif;
     font-size: 2rem;
-  }
-
-  .footer {
-  text-align: center;
-  grid-column: 1 / 11;
-  place-content: center;
-  color: white;
+    color: #960D38;
+    font-weight: bold;
+    padding-bottom: 3%;
 }
 
-.footer ul li {
-  background-color: darkblue;
-  font-family: "Franklin Gothic";
-  font-size: 20px;
-  list-style: none;
-  padding: 35px;
+li:nth-child(4) {
+    font-family: "Averia Serif Libre", serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #6C0080;
+    font-weight: bold;
+    padding-bottom: 7%;
+}
 }
 
-}
 
-@media screen and (max-width: 700px) {
-  .image-section {
+.footer {
+    text-align: center;
     grid-column: 1 / 11;
-  }
+    place-content: center;
+    color: white;
 
-  .image-section img {
-    width: 50%;
-  }
+
+ul li {
+    background-color: darkblue;
+    font-family: "Franklin Gothic";
+    font-size: 20px;
+    list-style: none;
+    padding: 35px;
 }
-
-@media screen and (max-width: 600px) {
-  .navbar {
-    background-color: orangered;
-    padding: 60px;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-
-  #logo {
-    padding-top: 30px;
-    font-size: 2rem;
-    margin-left: -39px;
-    position: absolute;
-  }
-
-  #logo:hover {
-    background-color: rgb(51, 11, 138);
-    color: greenyellow;
-  }
-
-  #menu {
-    float: right;
-  }
-
-  .image-section {
-    grid-column: 1 / 11;
-    width: 96%;
-  }
-
-  .text-section {
-    grid-column: 1 / 11;
-  }
-
-  .text-section li:nth-child(1) {
-    font-size: 3rem;
-  }
-
-  .text-section li:nth-child(2) {
-    font-size: 2rem;
-  }
-
-  .footer {
-  text-align: center;
-  grid-column: 1 / 11;
-  place-content: center;
-  color: white;
-}
-
-.footer ul li {
-  background-color: darkblue;
-  font-family: "Franklin Gothic";
-  font-size: 20px;
-  list-style: none;
-  padding: 35px;
-}
-
-}
-
-@media screen and (max-width: 400px) {
-  .navbar ul {
-    padding: 30px;
-    display: none;
-  }
-
-  #logo {
-    font-size: 2rem;
-    margin-left: -39px;
-  }
-
-  #logo:hover {background-color: rgb(51, 11, 138);
-    color: greenyellow;
-  }
-
-  #menu {
-    float: right;
-    
-  }
-
-  .image-section {
-    grid-column: 1 / 11;
-
-    img {
-        width: 50%;
-    }
-  }
-
-  .text-section {
-    grid-column: 1 / 11;
-  }
-
-  .text-section li:nth-child(1) {
-    font-size: 2rem;
-  }
-
-  .text-section li:nth-child(2) {
-    font-size: 1.5rem;
-  }
-
-  .footer {
-  text-align: center;
-  grid-column: 1 / 11;
-  place-content: center;
-  color: white;
-}
-
-.footer ul li {
-  background-color: darkblue;
-  font-family: "Franklin Gothic";
-  font-size: 20px;
-  list-style: none;
-  padding: 35px;
-}
-
 }

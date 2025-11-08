@@ -135,6 +135,7 @@ li:nth-child(4) {
     color: #6C0080;
     font-weight: bold;
     padding-bottom: 7%;
+    
 }
 }
 
@@ -154,3 +155,27 @@ ul li {
     padding: 35px;
 }
 }
+
+#responsive-nav {
+    display: none;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    left: 0;
+
+#nav {
+list-style: none;
+display: flex;
+flex-direction: column;
+float: left;
+
+li a {
+color: rgb(0, 0, 0);
+}
+
+}
+#responsive-nav.show {  
+    display: block;
+}}

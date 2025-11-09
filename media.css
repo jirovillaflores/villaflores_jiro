@@ -49,12 +49,12 @@ a {
       }
 
       .image-section {
-        grid-column: 1 / 6;
+        grid-column: 2 / 6;
       
 
       img {
         border-radius: 10px;
-        width: 70%;
+        width: 75%;
       }
     }
 
@@ -116,12 +116,13 @@ ul li a {
       }
 
 .image-section {
-        grid-column: 1 / 6;
+        grid-column: 2 / 6;
       
 
       img {
         border-radius: 10px;
         width: 70%;
+        text-align: center;
       }
     }
 .text-section {
@@ -192,15 +193,16 @@ ul li {
 .image-section {
           grid-column: 1 / 11;
           padding-top: 10px;
+          text-align: center;
       }
 
 .image-section img {
           border-radius: 20%;
-          width: 50%;
+          width: 71%;
       }
 
 .text-section {
-        grid-column: 1 / 11;
+        grid-column: 2 / 11;
         align-items: center;
         padding-top: 1rem;
       }
@@ -244,6 +246,7 @@ ul li {
 
 .image-section img {
         width: 50%;
+        text-align: center;
       }
     }}
 
@@ -282,7 +285,7 @@ ul li {
       }
 
 .text-section {
-          grid-column: 1 / 11;
+          grid-column: 2 / 11;
           align-items: center;
       }
 

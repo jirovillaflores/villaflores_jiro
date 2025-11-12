@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiro Villaflores | My Portfolio</title>
+
+   
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Palanquin:wght@400;700&family=Averia+Serif+Libre:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+       
+        <nav class="navbar">
+            <a href="#" id="logo">My Portfolio</a>
+            <ul class="nav-links" id="main-nav">
+                <li><a href="index.html" id="color-btn">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div id="menu">☰</div>
+        </nav>
+
+        
+        <div id="responsive-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="image-section">
+            <img src="jiro_portfolio_webdev.png" alt="Jiro Villaflores">
+        </div>
+
+        
+        <div class="text-section">
+            <ul>
+            <li>Contact Me</li>
+            <li>☎️ +639555172281 / +639561968942</li>
+
+            <li>
+                <a href="mailto:jirotritinvillaflores@gmail.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" width="24" height="24">
+                jirotritinvillaflores@gmail.com
+                </a>
+            </li>
+
+            <li>
+                <a href="https://web.facebook.com/jirotritinvillaflores" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" width="24" height="24">
+                Jiro Tritin Villaflores
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/jirovillaflores/villaflores_jiro/tree/portfolio_v2" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="24" height="24">
+                villaflores_jiro
+                </a>
+            </li>
+            </ul>
+        </div>
+
+        
+        <footer class="footer">
+            <!-- <ul>
+                <li>© 2025 Jiro Villaflores | All Rights Reserved</li>
+            </ul> -->
+        </footer>
+    </div>
+
+    
+    <script>
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('responsive-nav');
+
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+

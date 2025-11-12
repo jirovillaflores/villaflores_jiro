@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiro Villaflores | My Portfolio</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Palanquin:wght@400;700&family=Averia+Serif+Libre:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <nav class="navbar">
+            <a href="#" id="logo">My Portfolio</a>
+            <ul class="nav-links" id="main-nav">
+                <li><a href="index.html" id="color-btn">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div id="menu">☰</div>
+        </nav>
+
+        <div id="responsive-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="image-section">
+            <img src="jiro_portfolio_webdev.png" alt="Jiro Villaflores">
+        </div>
+
+        <div class="text-section">
+            <ul>
+                <li>Hello! I am Jiro T. Villaflores.</li>
+                <li>BSInT 3rd Year Student</li>
+                <li>Currently learning Web Development</li>
+            </ul>
+        </div>
+
+        <footer class="footer">
+            <!-- <ul>
+                <li>© 2025 Jiro Villaflores | All Rights Reserved</li>
+            </ul> -->
+        </footer>
+    </div>
+
+    <script>
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('responsive-nav');
+
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+

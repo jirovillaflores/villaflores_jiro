@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiro Villaflores | My Portfolio</title>
+
+   
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Palanquin:wght@400;700&family=Averia+Serif+Libre:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+       
+        <nav class="navbar">
+            <a href="#" id="logo">My Portfolio</a>
+            <ul class="nav-links" id="main-nav">
+                <li><a href="index.html" id="color-btn">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div id="menu">☰</div>
+        </nav>
+
+       
+        <div id="responsive-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="image-section">
+            <img src="jiro_portfolio_webdev.png" alt="Jiro Villaflores">
+        </div>
+
+        
+        <div class="text-section">
+            <ul>
+                <li>About Me</li>
+                <li>I live at Purok Bougainvilla, Brgy. Datagon, Pamplona, Negros Oriental 6205.</li>
+                <li>I was born on February 9, 2005, 20 years ago.</li>
+                
+            </ul>
+        </div>
+        
+        <div class="quote-section">
+            <ul>
+                <li>“I believe in shaping my own path, one step at a time.”</li>
+            </ul>
+        </div>
+            
+        
+        <footer class="footer">
+            <!-- <ul>
+                <li>© 2025 Jiro Villaflores | All Rights Reserved</li>
+            </ul> -->
+        </footer>
+    </div>
+
+    <
+    <script>
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('responsive-nav');
+
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+

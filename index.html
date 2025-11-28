@@ -3,70 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jiro Villaflores | My Portfolio</title>
-
-    
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Palanquin:wght@400;700&family=Averia+Serif+Libre:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calstyle.css">
 </head>
-
 <body>
 
-    <div class="grid-container">
-        <nav class="navbar">
-            <a href="#" id="logo">My Portfolio</a>
-            <ul class="nav-links" id="main-nav">
-                <li><a href="index.html" id="color-btn">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div id="menu">☰</div>
-        </nav>
-
-        <div id="responsive-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="image-section">
-            <img src="jiro_portfolio_webdev.png" alt="Jiro Villaflores">
-        </div>
-
-        <div class="text-section">
-            <ul>
-                <li>Hello! I am Jiro T. Villaflores.</li>
-                <li>BSInT 3rd Year Student</li>
-                <li>Currently learning Web Development</li>
-            </ul>
-        </div>
-
-        <footer class="footer">
-            <!-- <ul>
-                <li>© 2025 Jiro Villaflores | All Rights Reserved</li>
-            </ul> -->
-        </footer>
+    <div class="names">
+        <ul>
+            <li>ITS 300 (WEB DEVELOPMENT) <br> CALCULATOR ACTIVITY</li>
+            <li>Venz Horace D. Carabot</li>
+            <li>Joemarie K. Cataylo</li>
+            <li>Harvey B. Dampios</li>
+            <li>Jiro T. Villaflores</li>
+        </ul>
     </div>
 
+    <div class="calculator">
+    <input type="text" id="viewvalue" placeholder="0" readonly>
+
+    <div class="buttons">
+        <input onclick="clearDisplay()" type="button" value="C">
+        <input onclick="sqrtValue()" type="button" value="√">
+        <input onclick="insertPi()" type="button" value="π">
+        <input onclick="deleteLast()" type="button" value="⌫">
+
+        <input onclick="insert('7')" type="button" value="7">
+        <input onclick="insert('8')" type="button" value="8">
+        <input onclick="insert('9')" type="button" value="9">
+        <input onclick="squareValue()" type="button" value="x²">
+        
+        <input onclick="insert('4')" type="button" value="4">
+        <input onclick="insert('5')" type="button" value="5">
+        <input onclick="insert('6')" type="button" value="6">
+        <input onclick="insert('÷')" type="button" value="÷">
+        
+        <input onclick="insert('1')" type="button" value="1">
+        <input onclick="insert('2')" type="button" value="2">
+        <input onclick="insert('3')" type="button" value="3">
+        <input onclick="insert('*')" type="button" value="*">
+        
+        <input onclick="insert('0')" type="button" value="0" class="zero">
+        <input onclick="insert('.')" type="button" value=".">
+        <input onclick="insert('-')" type="button" value="-">
+        <input onclick="calculate()" type="button" value="=" class="equals">
+        <input onclick="insert('+')" type="button" value="+">
+    </div>
+</div>
+
     <script>
-        const menu = document.getElementById('menu');
-        const nav = document.getElementById('responsive-nav');
+   let display = document.getElementById("viewvalue");
 
-        menu.addEventListener('click', () => {
-            nav.classList.toggle('show');
-        });
+        function insert(val) {
+            display.value += val;
+        }
+
+        function clearDisplay() {
+            display.value = "";
+        }
+
+        function deleteLast() {
+            display.value = display.value.slice(0, -1);
+        }
+
+        function insertPi() {
+            display.value += Math.PI.toFixed(12);
+        }
+
+        function sqrtValue() {
+            try {
+                display.value = Math.sqrt(parseFloat(display.value));
+            } catch {
+                display.value = "Error";
+            }
+        }
+
+        function squareValue() {
+            try {
+                let n = parseFloat(display.value);
+                display.value = n * n;
+            } catch {
+                display.value = "Error";
+            }
+        }
+
+        function calculate() {
+            try {
+                display.value = eval(display.value);
+            } catch {
+                display.value = "Error";
+            }
+        }
     </script>
-
 </body>
 </html>
-
-
-
-
-
 

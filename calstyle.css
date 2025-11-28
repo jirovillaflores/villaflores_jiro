@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 60% 20%, #3b0066, #141408);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.names {
+    position: absolute;
+    right: -31px;
+
+    ul li {
+    color: #e9f50a;
+    font-size: 25px;
+    font-weight: 300;
+    padding-right: 2%;
+    }
+
+    ul li:nth-child(1) {
+        font-weight: bold;
+        list-style-type: none;
+    }
+
+    
+}
+
+
+.calculator {
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 25px rgba(255,255,255,0.15);
+}
+
+#viewvalue {
+    width: 91%;
+    height: 70px;
+    margin-bottom: 15px;
+    border: none;
+    padding: 15px;
+    font-size: 26px;
+    text-align: right;
+    color: #f6f6f6;
+    background: rgba(255,255,255,0.12);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+}
+
+.buttons {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+input[type="button"] {
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    transition: .25s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+input[type="button"]:hover {
+    background: rgba(255,255,255,0.18);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.25);
+}
+
+input[type="button"]:active {
+    transform: scale(0.92);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+input[value="/"],
+input[value="*"],
+input[value="-"],
+input[value="+"],
+input[value="√"],
+input[value="π"],
+input[value="x²"] {
+    background: rgba(17, 63, 145, 0.25);
+    color: #8dd0ff;
+}
+
+.equals {
+    grid-column: span 3;
+    background: linear-gradient(90deg, #33ffd8, #00a2ff);
+    color: #06162b;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(0,255,255,0.6);
+}
+
+.equals:hover {
+    box-shadow: 0 0 20px rgba(0,255,255,0.9);
+}
+
+input[value="C"] {
+    background: rgba(255,30,30,0.35);
+    color: #ffdede;
+}
+
+input[value="⌫"] {
+    background: rgba(255,180,0,0.35);
+    color: #fff1c8;
+}

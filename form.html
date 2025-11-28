@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="regstyle.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.reg {
+   ul li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 10%;
+    margin-right: 7%;
+    font-weight: bold;
+    color: green;
+   }
+}
+
+.regform {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <form>
+
+        <div class="reg">
+        <ul>
+            <li>ITS 300 (WEB DEVELOPMENT) <br> REGISTRATION FORM ACTIVITY</li>
+        </div>
+
+        <div class="regform" id="viewform">
+        <input type="text" id="fname" placeholder="First Name" name="fname"><br><br>
+        <input type="text" id="mname" placeholder="Middle Name" name="mname"><br><br>
+        <input type="text" id="lname" placeholder="Last Name" name="lname"><br><br>
+        <input type="text" id="address" placeholder="Address" name="address"><br><br>
+        <input type="email" id="email" placeholder="Email" name="email"><br><br>
+        <button id="Submit">Submit</button>
+    </form>
+</body>
+    <script>
+        let display = document.getElementById("viewform");
+
+
+        const fname = document.getElementById("fname");
+        const mname = document.getElementById("mname");
+        const lname = document.getElementById("lname");
+        const address = document.getElementById("address");
+        const email = document.getElementById("email");
+        const button = document.getElementById("Submit");
+    
+    
+    
+    
+        button.addEventListener("click", SubmitForm);
+        
+        function SubmitForm() {
+            if (fname.value === "" || mname.value === "" || lname.value === "" || address.value === "" || email.value === "") {
+            alert("All fields are empty. Please fill out the form.");
+            } else {
+            alert("Thank you for registering, " + fname.value + " " + mname.value + " " + lname.value + "!");
+        }
+    }
+        
+    
+    
+    </script>
+</html>
